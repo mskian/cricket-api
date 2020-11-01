@@ -41,7 +41,7 @@ git clone https://github.com/mskian/cricket-api.git
 - Get the Live Match Score URL from - `https://www.cricbuzz.com/cricket-match/live-scores`
 - Enter them Directly or replace `www` with `m`
 
-#### Example
+### Example
 
 ```sh
 https://cri.example.com/cri.php?url=https://www.cricbuzz.com/live-cricket-scores/30524/53rd-match-indian-premier-league-2020
@@ -53,7 +53,7 @@ https://cri.example.com/cri.php?url=https://www.cricbuzz.com/live-cricket-scores
 https://cri.example.com/cri.php?url=https://m.cricbuzz.com/live-cricket-scores/30524/53rd-match-indian-premier-league-2020
 ```
 
-#### Example Response
+### Example Response
 
 ![Cricket API](https://raw.githubusercontent.com/mskian/cricket-api/main/images/screenshot.png)  
 
@@ -73,6 +73,7 @@ function display_api_response() {
 }
 add_action( 'init', 'display_api_response' );
 ```
+
 Replace `YOUR-API-Domain` with your actual API Domain
 
 - Fetch API (Javascript)
