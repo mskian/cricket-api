@@ -8,9 +8,9 @@ This is an unofficial API and not Linked or Partnered with Any Brands/Company.
 
 ## How it Works? 🤔
 
-We Just Fetch the Certain data from Cricbuzz using PHP cURL `Preg_match` and `preg_match_all` in other word we can say this as Scraping but here we not store any data's or link the Cricbuzz in our Script.
+We are just fetching the data from Cricbuzz using PHP cURL `preg_match` and `preg_math_all`. It's kind of scraping but we are not storing any data or link in our end.
 
-We Just access the Live Score URL via cURL & Get the Certain data's from the Webpage.
+Everything is scraped live and shown to end users in realtime.
 
 ## Requirements 📑
 
@@ -28,7 +28,7 @@ We Just access the Live Score URL via cURL & Get the Certain data's from the Web
 git clone https://github.com/mskian/cricket-api.git
 ```
 
-- install the API Separately on your server
+- Install the API Separately on your server
 - Download or clone the script in `/var/www/`
 - Server Root Directory Pointed to script folder (Different on Some Hostings and server)
 
@@ -59,12 +59,12 @@ https://cri.example.com/cri.php?url=https://m.cricbuzz.com/live-cricket-scores/3
 
 ## Code Examples ☕
 
-- Wordpress
+- WordPress
 
 ```php
 ## API Auth and Get data
 function display_api_response() {
-  $base_url = 'https://api.example.com/cri.php?url=';
+  $base_url = 'https://YOUR-API-Domain.com/cri.php?url=';
   $score_path = 'https://www.cricbuzz.com/live-cricket-scores/30524/53rd-match-indian-premier-league-2020';
   $url = $base_url.$score_path;
   $response = wp_remote_get($url);
@@ -73,6 +73,7 @@ function display_api_response() {
 }
 add_action( 'init', 'display_api_response' );
 ```
+Replace `YOUR-API-Domain` with your actual API Domain
 
 - Fetch API (Javascript)
 
@@ -106,7 +107,7 @@ Your PR's are Welcome
 
 ## Disclaimer 🗃
 
-- This is Not an Offical API from Cricbuzz - it's an unofficial API
+- This is not an Offical API from Cricbuzz - it's an Unofficial API
 - This is for Education Purpose only - use at your own risk on Production Site
 
 All Credits Goes to <https://www.cricbuzz.com/>
