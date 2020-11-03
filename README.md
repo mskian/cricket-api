@@ -63,6 +63,47 @@ https://cri.example.com/cri.php?url=https://m.cricbuzz.com/live-cricket-scores/3
 
 ![Cricket API](https://raw.githubusercontent.com/mskian/cricket-api/main/images/screenshot1.png)  
 
+```json
+{
+    "success": true,
+    "livescore": {
+        "title": "Sunrisers Hyderabad vs Mumbai Indians, 56th Match",
+        "current": "SRH - 145\/0 (16.2)",
+        "batsman": "Wriddhiman Saha*",
+        "batsmanrun": "57",
+        "ballsfaced": "(43)",
+        "fours": "7",
+        "sixes": "1",
+        "bowler": "Nathan Coulter-Nile*",
+        "bowlerover": "3.2",
+        "bowlerruns": "25",
+        "bowlerwickets": "0",
+        "partnership": "145(98)",
+        "recentballs": "Data Not Found",
+        "lastwicket": "... 0 0 4 1 | 0 4 1 1 0 1 | 1 0",
+        "runrate": "CRR: 8.88",
+        "commentary": [
+            "16.2 Coulter-Nile to W Saha, no run, 139.1kph, ",
+            "16.1 Coulter-Nile to Warner, 1 run, 124.4kph, length, nipping in off the pitch onto middle. Warner makes room and slaps it to deep point ",
+            "15.5 Pattinson to Warner, no run, 139.7kph, backs away, cuts, but ends up miscuing it back down the pitch ",
+            "15.4 Pattinson to W Saha, 1 run, swivels, one-legged, pulling it to the man in the deep behind square ",
+            "15.3 Pattinson to Warner, 1 run, 118.2kph, back of a length, taking pace off, keeping it outside off for Warner to have to reach out. And he does connect this time, to guide it to third man ",
+            "15.1 Pattinson to Warner, no run, 134.5kph, full, outside off, quick, just inside the tramline. Warner stretches, but can't quite connect ",
+            "14.6 Coulter-Nile to Warner, 1 run, 130.6kph, length, nips back in, and Warner jumps away at the last moment with an opened bat face to steer it through point ",
+            "14.4 Coulter-Nile to Warner, no run, skids through as it seams back in sharply to go under Warner's crouched swat, thudding off his thighs towards backward point ",
+            "14.3 Coulter-Nile to Warner, no run, 136.4kph, serious bouncer, climbing back in. Nope, it's the circumstances that determines its ferocity, and with an 18 runs | 33 balls equation, this is gently left alone ",
+            "14.2 Coulter-Nile to W Saha, 1 run, 136.9kph, full, on middle with the angle-in. Saha goes wristy, through mid-wicket ",
+            "14.1 Coulter-Nile to W Saha, no run, 117kph, in-cutter into the tummy. Saha gets cramped in what looked like an initial attempt to cut, and so drops his wrists, opens his bat face and runs out to short third man ",
+            "13.6 D Kulkarni to Warner, 2 runs, 105.4kph, and very comfortable. Around the fourth-stump, which Warner lines up to and punches through point ",
+            "13.5 D Kulkarni to W Saha, 1 run, 127.6kph, full, on off, quiet flick, long-on "
+        ],
+        "teamone": "Data Not Found",
+        "teamtwo": "Data Not Found",
+        "update": "Sunrisers Hyderabad need 5 runs in 22 balls"
+    }
+}
+```
+
 ## Code Examples ☕
 
 - WordPress
