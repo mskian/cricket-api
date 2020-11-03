@@ -12,6 +12,12 @@ We are just fetching the data from Cricbuzz using PHP cURL `preg_match` and `pre
 
 Everything is scraped live and shown to end users in realtime.
 
+**API URL**
+
+```sh
+https://cricket-api.vercel.app/cri.php?url=<Live Match URL>
+```
+
 ## Requirements 📑
 
 - Server with PHP Support  
@@ -55,7 +61,7 @@ https://cri.example.com/cri.php?url=https://m.cricbuzz.com/live-cricket-scores/3
 
 ### Example Response
 
-![Cricket API](https://raw.githubusercontent.com/mskian/cricket-api/main/images/screenshot.png)  
+![Cricket API](https://raw.githubusercontent.com/mskian/cricket-api/main/images/screenshot1.png)  
 
 ## Code Examples ☕
 
@@ -119,7 +125,9 @@ All Credits Goes to <https://www.cricbuzz.com/>
 |---|:------|-------------|
 | 01 | [Live Cricket Score Static Site](https://github.com/mskian/livescore) | A Simple Scrape Method - Fetch the Live Cricket Score from `espncricinfo.com` using Nodejs and Cheerio.js |
 | 02 | [IPL Special](https://github.com/mskian/iplscore) | Cricket API for Get the Live IPL Cricket Score |
-| 03 | [Live IPL Score Update on Telegram](https://github.com/mskian/score-update) | Get Live IPL cricket Score on Telegram  |  
+| 03 | [Live IPL Score Update on Telegram](https://github.com/mskian/score-update) | Get Live IPL cricket Score on Telegram  |
+| 04 | [Live Cricket Score Wordpress Plugin (JS Version)](https://github.com/mskian/hello-cricket) | Get Live Cricket Score on Wordpress site call API using Javascript Fetch API |
+| 04 | [Live Cricket Score Wordpress Plugin (Wp Remote URL)](https://github.com/mskian/san-cricket) | Get Live Cricket Score on Wordpress site call API using Wordpress HTTP Remote URL |  
 
 ## LICENSE 📕
 
