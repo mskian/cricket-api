@@ -247,4 +247,23 @@ function getBowlerwickets($curl_content)
     }
 }
 
+function getCommentary($curl_content)
+{
+    $regexRateLimit = "|<p class='commtext'>([^<]*)</p>|i";
+    $regexSrc = "|<p class='commtext'>([^<]*)</p>|i";
+
+    if (preg_match_all($regexRateLimit, $curl_content, $match))
+    {
+        return $match[1];
+    }
+    elseif (preg_match_all($regexSrc, $curl_content, $match))
+    {
+        return $match[1];
+    }
+    else
+    {
+        return false;
+    }
+}
+
 ?>

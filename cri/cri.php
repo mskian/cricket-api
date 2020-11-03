@@ -209,17 +209,44 @@ try
     if ($string = getTimeline($data))
     {   
 
-        $msg['livescore']['timeline'] = isset($string[2]) ? $string[2] : 'Data Not Found';
+        $msg['livescore']['partnership'] = isset($string[0]) ? $string[0] : 'Data Not Found';
 
     } elseif ($string == null)
     {
-        $msg['livescore']['timeline'] = 'Data Not Found';
+        $msg['livescore']['partnership'] = 'Data Not Found';
 
     } else {
 
         $msg = false;
     }
 
+    if ($string = getTimeline($data))
+    {   
+
+        $msg['livescore']['recentballs'] = isset($string[2]) ? $string[2] : 'Data Not Found';
+
+    } elseif ($string == null)
+    {
+        $msg['livescore']['recentballs'] = 'Data Not Found';
+
+    } else {
+
+        $msg = false;
+    }
+
+    if ($string = getTimeline($data))
+    {   
+
+        $msg['livescore']['lastwicket'] = isset($string[1]) ? $string[1] : 'Data Not Found';
+
+    } elseif ($string == null)
+    {
+        $msg['livescore']['lastwicket'] = 'Data Not Found';
+
+    } else {
+
+        $msg = false;
+    }
 
     if ($string = getRunrate($data))
     {   
@@ -231,6 +258,20 @@ try
     } elseif ($string == null)
     {
         $msg['livescore']['runrate'] = 'Data Not Found';
+
+    } else {
+
+        $msg = false;
+    }
+
+    if ($string = getCommentary($data))
+    {   
+
+        $msg['livescore']['commentary'] = isset($string) ? $string : 'Data Not Found';
+
+    } elseif ($string == null)
+    {
+        $msg['livescore']['commentary'] = 'Data Not Found';
 
     } else {
 
@@ -279,7 +320,8 @@ try
         $msg = false;
     }
 
-      echo json_encode($msg, JSON_PRETTY_PRINT);
+    echo json_encode($msg, JSON_PRETTY_PRINT);
+
 }
 
 catch(Exception $e)
