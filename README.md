@@ -18,7 +18,7 @@ Everything is scraped live and shown to end users in realtime.
 - PHP 7.2 or 7.3 or 7.4  
 - PHP cURL  
 - Nginx, Apache2 or  Lightspeed  
-- HTTPS (For Secure SSL Secure Connections)  
+- HTTPS (For Secure SSL Connections)  
 
 ## Installation 🍯
 
