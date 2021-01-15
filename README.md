@@ -47,7 +47,7 @@ git clone https://github.com/mskian/cricket-api.git
 - Get the Live Match Score URL from - `https://www.cricbuzz.com/cricket-match/live-scores`
 - Enter them Directly or replace `www` with `m`
 
-### Example
+### Example 📋
 
 ```sh
 https://cri.example.com/cri.php?url=https://www.cricbuzz.com/live-cricket-scores/30524/53rd-match-indian-premier-league-2020
@@ -59,7 +59,7 @@ https://cri.example.com/cri.php?url=https://www.cricbuzz.com/live-cricket-scores
 https://cri.example.com/cri.php?url=https://m.cricbuzz.com/live-cricket-scores/30524/53rd-match-indian-premier-league-2020
 ```
 
-### Example Response
+### Example Response 🌐
 
 ![Cricket API](https://raw.githubusercontent.com/mskian/cricket-api/main/images/screenshot1.png)  
 
@@ -168,7 +168,8 @@ All Credits Goes to <https://www.cricbuzz.com/>
 | 02 | [IPL Special](https://github.com/mskian/iplscore) | Cricket API for Get the Live IPL Cricket Score |
 | 03 | [Live IPL Score Update on Telegram](https://github.com/mskian/score-update) | Get Live IPL cricket Score on Telegram  |
 | 04 | [Live Cricket Score Wordpress Plugin (JS Version)](https://github.com/mskian/hello-cricket) | Get Live Cricket Score on Wordpress site call API using Javascript Fetch API |
-| 04 | [Live Cricket Score Wordpress Plugin (Wp Remote URL)](https://github.com/mskian/san-cricket) | Get Live Cricket Score on Wordpress site call API using Wordpress HTTP Remote URL |  
+| 05 | [Live Cricket Score Wordpress Plugin (Wp Remote URL)](https://github.com/mskian/san-cricket) | Get Live Cricket Score on Wordpress site call API using Wordpress HTTP Remote URL |  
+| 06 | [PWA Web App](https://github.com/mskian/vue-cricket) | Real-time Live Cricket Score Web app + PWA Built using Nuxt.js |  
 
 ## LICENSE 📕
 
