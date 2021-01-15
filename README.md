@@ -12,7 +12,7 @@ We are just fetching the data from Cricbuzz using PHP cURL `preg_match` and `pre
 
 Everything is scraped live and shown to end users in realtime.
 
-**API URL**
+**API URL 🌐**
 
 ```sh
 https://cricket-api.vercel.app/cri.php?url=<Live Match URL>
@@ -32,14 +32,14 @@ https://cricket-api.vercel.app/cri.php?url=<Live Match URL>
 
 ```sh
 git clone https://github.com/mskian/cricket-api.git
+cd cricket-api
+cd cri
 ```
 
-- Install the API Separately on your server
-- Download or clone the script in `/var/www/`
-- Server Root Directory Pointed to script folder (Different on Some Hostings and server)
+- Test the API
 
 ```sh
-/var/www/cricket-api/cri ## Script Folder
+php -S localhost:6001
 ```
 
 ## Usage 🍟
@@ -50,13 +50,13 @@ git clone https://github.com/mskian/cricket-api.git
 ### Example 📋
 
 ```sh
-https://cri.example.com/cri.php?url=https://www.cricbuzz.com/live-cricket-scores/30524/53rd-match-indian-premier-league-2020
+http://localhost:6001/cri.php?url=https://www.cricbuzz.com/live-cricket-scores/30524/53rd-match-indian-premier-league-2020
 ```
 
 (OR)
 
 ```sh
-https://cri.example.com/cri.php?url=https://m.cricbuzz.com/live-cricket-scores/30524/53rd-match-indian-premier-league-2020
+http://localhost:6001/cri.php?url=https://m.cricbuzz.com/live-cricket-scores/30524/53rd-match-indian-premier-league-2020
 ```
 
 ### Example Response 🌐
@@ -139,6 +139,18 @@ async function fetchscore() {
 }
 fetchscore();
 ```
+
+## Free Deploy 😍
+
+- Deploy on Heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mskian/cri-deploy)  
+
+- Deploy on Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fmskian%2Fcri-deploy)  
+
+How Deploy Works? - <https://github.com/mskian/cri-deploy>
 
 ## Development 🍩
 
