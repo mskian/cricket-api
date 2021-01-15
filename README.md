@@ -1,4 +1,4 @@
-# Cricket API 🍔
+# Free Cricket API 🍔
 
 Live Cricket Score API 🏏
 
