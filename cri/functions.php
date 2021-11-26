@@ -266,4 +266,23 @@ function getCommentary($curl_content)
     }
 }
 
+function getSR($curl_content)
+{
+    $regexRateLimit = '|<td colspan="1" class="cbz-grid-table-fix " style="width:18%;" >([^<]*)</td>|i';
+    $regexSrc = '|<td colspan="1" class="cbz-grid-table-fix " style="width:18%;" >([^<]*)</td>|i';
+
+    if (preg_match_all($regexRateLimit, $curl_content, $match))
+    {
+        return $match[1];
+    }
+    elseif (preg_match_all($regexSrc, $curl_content, $match))
+    {
+        return $match[1];
+    }
+    else
+    {
+        return false;
+    }
+}
+
 ?>

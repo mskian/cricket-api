@@ -150,6 +150,106 @@ try
         $msg = false;
     }
 
+    if ($string = getSR($data))
+    {   
+
+        $msg['livescore']['sr'] = isset($string[0]) ? $string[0] : 'Data Not Found';
+
+    } elseif ($string == null)
+    {
+        $msg['livescore']['sr'] = 'Data Not Found';
+
+    } else {
+
+        $msg = false;
+    }
+
+
+    if ($string = getBatBowl($data))
+    {   
+
+        $msg['livescore']['batsmantwo'] = isset($string[1]) ? $string[1] : 'Data Not Found';
+
+    } elseif ($string == null)
+    {
+        $msg['livescore']['batsmantwo'] = 'Data Not Found';
+
+    } else {
+
+        $msg = false;
+    }
+
+
+    if ($string = getBatRun($data))
+    {   
+
+        $msg['livescore']['batsmantworun'] = isset($string[1]) ? $string[1] : 'Data Not Found';
+
+    } elseif ($string == null)
+    {
+        $msg['livescore']['batsmantworun'] = 'Data Not Found';
+
+    } else {
+
+        $msg = false;
+    }
+
+    if ($string = getBatRuns($data))
+    {   
+
+        $msg['livescore']['batsmantwoballsfaced'] = isset($string[1]) ? $string[1] : 'Data Not Found';
+
+    } elseif ($string == null)
+    {
+        $msg['livescore']['batsmantwoballsfaced'] = 'Data Not Found';
+
+    } else {
+
+        $msg = false;
+    }
+
+    if ($string = getBowleruns($data))
+    {   
+
+        $msg['livescore']['batsmantwofours'] = isset($string[2]) ? $string[2] : 'Data Not Found';
+
+    } elseif ($string == null)
+    {
+        $msg['livescore']['batsmantwofours'] = 'Data Not Found';
+
+    } else {
+
+        $msg = false;
+    }
+
+    if ($string = getBowleruns($data))
+    {   
+
+        $msg['livescore']['batsmantwosixes'] = isset($string[3]) ? $string[3] : 'Data Not Found';
+
+    } elseif ($string == null)
+    {
+        $msg['livescore']['batsmantwosixes'] = 'Data Not Found';
+
+    } else {
+
+        $msg = false;
+    }
+
+    if ($string = getSR($data))
+    {   
+
+        $msg['livescore']['batsmantwosr'] = isset($string[1]) ? $string[1] : 'Data Not Found';
+
+    } elseif ($string == null)
+    {
+        $msg['livescore']['batsmantwosr'] = 'Data Not Found';
+
+    } else {
+
+        $msg = false;
+    }
+
     if ($string = getBatBowl($data))
     {   
 
@@ -200,6 +300,90 @@ try
     } elseif ($string == null)
     {
         $msg['livescore']['bowlewickets'] = 'Data Not Found';
+
+    } else {
+
+        $msg = false;
+    }
+
+    if ($string = getBowleruns($data))
+    {   
+
+        $msg['livescore']['bowlermaiden'] = isset($string[4]) ? $string[4] : 'Data Not Found';
+
+    } elseif ($string == null)
+    {
+        $msg['livescore']['bowlermaiden'] = 'Data Not Found';
+
+    } else {
+
+        $msg = false;
+    }
+
+    if ($string = getBatBowl($data))
+    {   
+
+        $msg['livescore']['bowlertwo'] = isset($string[3]) ? $string[3] : 'Data Not Found';
+
+    } elseif ($string == null)
+    {
+        $msg['livescore']['bowlertwo'] = 'Data Not Found';
+
+    } else {
+
+        $msg = false;
+    }
+
+    if ($string = getBowlerover($data))
+    {   
+
+        $msg['livescore']['bowletworover'] = isset($string[1]) ? $string[1] : 'Data Not Found';
+
+    } elseif ($string == null)
+    {
+        $msg['livescore']['bowlertwoover'] = 'Data Not Found';
+
+    } else {
+
+        $msg = false;
+    }
+
+    if ($string = getBowleruns($data))
+    {   
+
+        $msg['livescore']['bowlertworuns'] = isset($string[7]) ? $string[7] : 'Data Not Found';
+
+    } elseif ($string == null)
+    {
+        $msg['livescore']['bowlertworuns'] = 'Data Not Found';
+
+    } else {
+
+        $msg = false;
+    }
+
+    if ($string = getBowlerwickets($data))
+    {   
+
+        $msg['livescore']['bowlertwowickets'] = isset($string[1]) ? $string[1] : 'Data Not Found';
+
+    } elseif ($string == null)
+    {
+        $msg['livescore']['bowlertwowickets'] = 'Data Not Found';
+
+    } else {
+
+        $msg = false;
+    }
+
+    if ($string = getBowleruns($data))
+    {   
+
+        $msg['livescore']['bowlertwomaiden'] = isset($string[6]) ? $string[6] : 'Data Not Found';
+
+    } elseif ($string == null)
+    {
+        $msg['livescore']['bowlertwomaiden'] = 'Data Not Found';
 
     } else {
 
