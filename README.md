@@ -12,7 +12,7 @@ We are just fetching the data from Cricbuzz using PHP cURL `preg_match` and `pre
 
 Everything is scraped live and shown to end users in realtime.
 
-**API URL 🌐**
+Example: **API URL 🌐**
 
 ```sh
 https://cricket-api.vercel.app/cri.php?url=<Live Match URL>
@@ -182,6 +182,8 @@ All Credits Goes to <https://www.cricbuzz.com/>
 | 04 | [Live Cricket Score Wordpress Plugin (JS Version)](https://github.com/mskian/hello-cricket) | Get Live Cricket Score on Wordpress site call API using Javascript Fetch API |
 | 05 | [Live Cricket Score Wordpress Plugin (Wp Remote URL)](https://github.com/mskian/san-cricket) | Get Live Cricket Score on Wordpress site call API using Wordpress HTTP Remote URL |  
 | 06 | [PWA Web App](https://github.com/mskian/vue-cricket) | Real-time Live Cricket Score Web app + PWA Built using Nuxt.js |  
+| 07 | [Cricket API Nodejs](https://github.com/mskian/cricket-api-nodejs) | JSON API Node.js Version |  
+| 08 | [Cricket Score Widget](https://github.com/mskian/cricket-score-widget) | Live Cricket Score Javascript Widget Build using Svelte JS |  
 
 ## LICENSE 📕
 
