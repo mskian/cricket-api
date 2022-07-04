@@ -6,6 +6,8 @@ unofficial API Data Fetched from `Cricbuzz.com`
 
 This is an unofficial API and not Linked or Partnered with Any Brands/Company.
 
+> Recently we shutdown our Free API Server due to bulk API Calls Personally we Suggest you to Self Host this API on your server - instant Deploy on Vercel and Heroku - <https://github.com/mskian/cri-deploy#free-deploy->  
+
 ## How it Works? 🤔
 
 We are just fetching the data from Cricbuzz using PHP cURL `preg_match` and `preg_math_all`. It's kind of scraping but we are not storing any data or link in our end.
@@ -15,13 +17,13 @@ Everything is scraped live and shown to end users in realtime.
 Example: **API URL 🌐**
 
 ```sh
-https://cricket-api.vercel.app/cri.php?url=<Live Match URL>
+https://localhost:6001/cri.php?url=<Live Match URL>
 ```
 
 ## Requirements 📑
 
 - Server with PHP Support  
-- PHP 7.2 or 7.3 or 7.4  
+- PHP 7.2 or 7.3 or 7.4 (Test upto PHP 8)
 - PHP cURL  
 - Nginx, Apache2 or  Lightspeed  
 - HTTPS (For Secure SSL Connections)  
