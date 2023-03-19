@@ -10,7 +10,7 @@ try:
     spinner.start()
     time.sleep(2)
     spinner.text = 'Fetching Live Score...'
-    r = requests.get('https://cricket-api.vercel.app/live.php')
+    r = requests.get('http://localhost:6001/live.php')
     DATA = json.loads(r.content.decode())
     time.sleep(2)
     spinner.stop()

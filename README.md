@@ -17,13 +17,17 @@ Everything is scraped live and shown to end users in realtime.
 Example: **API URL 🌐**
 
 ```sh
+## Get Live Match URL (Cricbuzz URL will be added in config.php file)
+https://localhost:6001/live.php
+
+## Get match from the cricbuzz URL
 https://localhost:6001/cri.php?url=<Live Match URL>
 ```
 
 ## Requirements 📑
 
 - Server with PHP Support  
-- PHP 7.2 or 7.3 or 7.4 (Test upto PHP 8)
+- PHP 7.2 or 7.3 or 7.4 or 8.0 (Test upto PHP 8.1)
 - PHP cURL  
 - Nginx, Apache2 or  Lightspeed  
 - HTTPS (For Secure SSL Connections)  
@@ -157,10 +161,9 @@ How Deploy Works? - <https://github.com/mskian/cri-deploy>
 ## Development 🍩
 
 ```sh
-git clone https://github.com/mskian/cricket-api.git
-cd cricket-api
-cd cri
-php -S localhost:3001
+git clone https://github.com/mskian/cri-deploy.git
+cd cri-deploy
+php -S localhost:6001
 ```
 
 ## Contributing 🙌
