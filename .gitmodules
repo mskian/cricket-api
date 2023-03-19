@@ -1,0 +1,3 @@
+[submodule "cri-deploy"]
+	path = cri-deploy
+	url = https://github.com/mskian/cri-deploy
