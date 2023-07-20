@@ -51,6 +51,7 @@ php -S localhost:6001
 
 - Get the Live Match Score URL from - `https://www.cricbuzz.com/cricket-match/live-scores`
 - Enter them Directly or replace `www` with `m`
+- XML feed support - `xml.php`
 
 ### Example 📋
 
@@ -163,6 +164,12 @@ How Deploy Works? - <https://github.com/mskian/cri-deploy>
 git clone https://github.com/mskian/cri-deploy.git
 cd cri-deploy
 php -S localhost:6001
+```
+
+- Update Submodule
+
+```sh
+git submodule update --remote --merge
 ```
 
 ## Contributing 🙌
